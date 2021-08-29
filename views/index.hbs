@@ -1,0 +1,25 @@
+
+<main>
+  <h2 class="tittle">Speak out your mind</h2>
+  
+  {{!-- messages loop --}}
+  <div class="message-container">
+    {{#each messages}}
+    <div class="message">
+      <h4 class="message-tittle">
+        {{user}}
+      </h4>
+      <p class="message-content">
+        {{text}}
+      </p>
+      <span class="message-date">
+        {{added}}
+      </span>
+    </div>
+    {{/each}}
+  </div>
+  
+  <a href="/new" class="btn">
+    <span>Add a message</span>
+  </a>
+</main>
